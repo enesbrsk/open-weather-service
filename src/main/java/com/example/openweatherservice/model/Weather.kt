@@ -20,5 +20,5 @@ data class Weather @JvmOverloads constructor(
     val country: String,
     val temperature: Int,
     val updatedTime: LocalDateTime,
-    val responseLocalTime: LocalTime,
+    val responseLocalTime: LocalDateTime,
 )
