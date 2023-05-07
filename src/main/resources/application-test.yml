@@ -11,5 +11,10 @@ spring:
     import: optional:file:.env[.properties]
 
 weather-stack:
+  api-url: http://api.weatherstack.com/current
+  api-key: ${WEATHER_STACK_API_KEY:default-key}
+  cache-name: weathers
   api-call-limit: 10
   cache-ttl: 60000 #1 minute
+
+
